@@ -475,7 +475,7 @@ namespace NgLocalizer
         private void MenuItem_OnClick(object sender, RoutedEventArgs e)
         {
             var version = Assembly.GetEntryAssembly().GetName().Version;
-            MessageBox.Show($"NgLocalizer v{version.Major}.{version.Minor}.\n\nThis is a tool developed through the years for managing translate or transloco translations a lot easier than manually. Please stay cautious and check the changes this tool makes before committing.\n\nFor questions, feedback, ideas: Thomas Vantroyen", "About", MessageBoxButton.OK);
+            MessageBox.Show($"NgLocalizer v{version.Major}.{version.Minor}.\n\nThis is a tool developed through the years for managing translate or transloco translations a lot easier than manually. Please stay cautious and check the changes this tool makes before committing.", "About", MessageBoxButton.OK);
         }
 
         private void HelpMenuItem_OnClick(object sender, RoutedEventArgs e)
