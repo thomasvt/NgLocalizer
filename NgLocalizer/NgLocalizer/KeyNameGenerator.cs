@@ -27,6 +27,7 @@ namespace NgLocalizer
         public static string GetDefaultKeyNameFor(TreeItem treeItem)
         {
             var ns = GetNamespace(treeItem);
+
             if (treeItem.Key.StartsWith(ns))
                 return treeItem.Key; // current key already follows the namespace convention
 

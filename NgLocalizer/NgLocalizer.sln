@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30907.101
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36301.6 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NgLocalizer", "NgLocalizer\NgLocalizer.csproj", "{2A5408A4-0D2D-4141-95A5-9826FE8D7B2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NgLocalizer.CLI", "NgLocalizer.CLI\NgLocalizer.CLI.csproj", "{D7C1E3C0-532A-40B5-A500-798A8DF29994}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,20 +17,15 @@ Global
 		{2A5408A4-0D2D-4141-95A5-9826FE8D7B2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A5408A4-0D2D-4141-95A5-9826FE8D7B2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A5408A4-0D2D-4141-95A5-9826FE8D7B2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7C1E3C0-532A-40B5-A500-798A8DF29994}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7C1E3C0-532A-40B5-A500-798A8DF29994}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7C1E3C0-532A-40B5-A500-798A8DF29994}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7C1E3C0-532A-40B5-A500-798A8DF29994}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E3D92959-318E-4329-9986-60477F9CC27E}
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 2
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = http://wftfsprod:8080/tfs/iam
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = NgLocalizer\\NgLocalizer.csproj
-		SccProjectName1 = NgLocalizer
-		SccLocalPath1 = NgLocalizer
 	EndGlobalSection
 EndGlobal

@@ -3,7 +3,7 @@ using NgLocalizer.ViewModels;
 
 namespace NgLocalizer.Parsing
 {
-    internal interface IFileParser
+    public interface IFileParser
     {
         string FileMask { get; }
         IEnumerable<TokenUsage> ParseFile(string file);

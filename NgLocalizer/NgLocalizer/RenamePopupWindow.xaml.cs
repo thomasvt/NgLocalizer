@@ -12,6 +12,7 @@ namespace NgLocalizer
     {
         private string _currentKey;
         private string _newKey;
+        private string _suggestion;
 
         public RenamePopupWindow()
         {
@@ -58,6 +59,17 @@ namespace NgLocalizer
             {
                 if (value == _newKey) return;
                 _newKey = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public string Suggestion
+        {
+            get => _suggestion;
+            set
+            {
+                if (value == _suggestion) return;
+                _suggestion = value;
                 OnPropertyChanged();
             }
         }

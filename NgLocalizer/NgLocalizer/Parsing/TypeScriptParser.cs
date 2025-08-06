@@ -5,7 +5,7 @@ using NgLocalizer.ViewModels;
 
 namespace NgLocalizer.Parsing
 {
-    internal class TypeScriptParser : IFileParser
+    public class TypeScriptParser : IFileParser
     {
         private readonly Regex _translationRegex = new ("translateService\\.(instant|get)\\('(?<key>.*?)'.*?\\)");
 

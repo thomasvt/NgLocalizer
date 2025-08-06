@@ -4,9 +4,9 @@ using System.Linq;
 
 namespace NgLocalizer.Configuration
 {
-    internal class LanguagesConfiguration
+    public class LanguagesConfiguration
     {
-        private List<string> _languages;
+        private List<string> _languages = [];
 
         public void Load()
         {

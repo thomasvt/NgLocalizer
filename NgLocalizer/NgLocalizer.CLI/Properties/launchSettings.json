@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "NgLocalizer.CLI": {
+      "commandName": "Project",
+      "commandLineArgs": "-s C:\\repos\\Zabun3\\Apps\\Zabun3.Client.App\\src -o C:\\repos\\Zabun3\\Apps\\Zabun3.Client.API\\Zabun3.Client.API\\AngularAppTokens.txt"
+    }
+  }
+}

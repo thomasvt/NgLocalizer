@@ -317,7 +317,8 @@ namespace NgLocalizer
             var dialog = new RenamePopupWindow
             {
                 CurrentKey = treeItem.Key,
-                NewKey = newKey
+                NewKey = newKey,
+                Suggestion = KeyNameGenerator.GetDefaultKeyNameFor(treeItem)
             };
             if (dialog.ShowDialog() == true)
             {
