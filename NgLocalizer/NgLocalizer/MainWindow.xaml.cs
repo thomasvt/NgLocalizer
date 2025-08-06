@@ -411,12 +411,12 @@ namespace NgLocalizer
 
         private void CopyNewKeyHtmlCode(object sender, RoutedEventArgs e)
         {
-            Clipboard.SetText("{{ 'NEW' | transloco }}");
+            Clipboard.SetText("{{ 'NEW' | translate }}");
         }
 
         private void CopyNewKeyTsCode(object sender, RoutedEventArgs e)
         {
-            Clipboard.SetText("this.translocoService.translate('NEW')");
+            Clipboard.SetText("this.translateService.instant('NEW')");
         }
 
         private async void SetAppFolder_Click(object sender, RoutedEventArgs e)
@@ -475,7 +475,7 @@ namespace NgLocalizer
         private void MenuItem_OnClick(object sender, RoutedEventArgs e)
         {
             var version = Assembly.GetEntryAssembly().GetName().Version;
-            MessageBox.Show($"NgLocalizer v{version.Major}.{version.Minor}.\n\nThis is a tool developed through the years for managing translate or transloco translations a lot easier than manually. Please stay cautious and check the changes this tool makes before committing.", "About", MessageBoxButton.OK);
+            MessageBox.Show($"NgLocalizer v{version.Major}.{version.Minor}.\n\nThis is a tool developed through the years for managing ngxTranslate translations a lot easier than manually. Please stay cautious and check the changes this tool makes before committing.", "About", MessageBoxButton.OK);
         }
 
         private void HelpMenuItem_OnClick(object sender, RoutedEventArgs e)
@@ -491,12 +491,12 @@ ADD NEW TRANSLATABLE ITEMS
 TRANSLATING ITEMS
 * Scan your sources with the button in the bottom to show a tree of the localizable tokens in your sources. Autoscanning happens upon each detected file-change.
 * The tree also shows how many translatable items there are below each node (in black), and how many not-yet-translated items (in red).
-* Rename tokens (right click menu): when renaming tokens, ngLocalizer suggests a namespaced key based on the file-path of the token. If you follow this convension, the tokens in the tree will stop showing the full namespace.
+* Rename tokens (right click menu): when renaming tokens, ngLocalizer suggests a namespaced key based on the file-path of the token. If you follow this convention, the tokens in the tree will stop showing the full namespace.
 * ngLocalizer tolerates the reuse of tokens (eg. 'GLOBAL.OK' for all ok buttons) but it is not built around this being a good practice in the long run. Therefore some features will falter a bit. eg. renaming a token will ONLY rename the usages of that token in the one file where you initiated the rename (in the treeview), not in other files where the same token may have been used.
   
 
 TREE COLOR LEGEND
-* bold text = valid token but deviating from ngLocalizer's naming convension
+* bold text = valid token but deviating from ngLocalizer's naming convention
 * gray text = invalid token", "Help/tips", MessageBoxButton.OK);
         }
 

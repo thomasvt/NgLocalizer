@@ -7,7 +7,7 @@ namespace NgLocalizer.Parsing
 {
     internal class TypeScriptParser : IFileParser
     {
-        private readonly Regex _translationRegex = new ("translocoService\\.translate\\('(?<key>.*?)'");
+        private readonly Regex _translationRegex = new ("translateService\\.(instant|get)\\('(?<key>.*?)'.*?\\)");
 
         public string FileMask => "*.ts";
 

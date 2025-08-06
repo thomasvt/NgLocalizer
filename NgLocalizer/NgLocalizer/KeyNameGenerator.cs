@@ -28,9 +28,9 @@ namespace NgLocalizer
         {
             var ns = GetNamespace(treeItem);
             if (treeItem.Key.StartsWith(ns))
-                return treeItem.Key; // current key already follows the namespace convension
+                return treeItem.Key; // current key already follows the namespace convention
 
-            // current key does not follow the convension, propose a changed key that does follow the convension:
+            // current key does not follow the convention, propose a changed key that does follow the convention:
             var lastKeyPart = treeItem.Key.Split('.').Last();
             if (string.IsNullOrWhiteSpace(lastKeyPart))
                 throw new Exception($"Last part of existing key must be non-empty: {treeItem.Key}");

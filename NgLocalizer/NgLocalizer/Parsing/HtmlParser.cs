@@ -8,7 +8,7 @@ namespace NgLocalizer.Parsing
 {
     internal class HtmlParser : IFileParser
     {
-        private readonly Regex _translationRegex = new Regex("(?<code>[^{\"]*)\\|\\s*transloco");
+        private readonly Regex _translationRegex = new Regex("(?<code>[^{\"]*)\\|\\s*translate");
         private readonly Regex _keyInTranslationRegex = new Regex("'(?<key>.*?)'");
 
         public string FileMask => "*.html";
